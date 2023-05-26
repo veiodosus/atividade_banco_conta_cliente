@@ -61,6 +61,8 @@ class Conta:
         if not valor > self.__saldo:
             self.__saldo -= valor
             print(f'{valor} reais sacados da conta!')
+        else:
+            print('Valor inválido, maior do que o que há na conta!')
     
     def __str__(self) -> str:
         return f'N: {self.__numero}. Saldo: {self.__saldo}.'
@@ -135,6 +137,17 @@ print('')
 print(banco1.saldo_total())
 print(banco2.saldo_total())
 print(banco3.saldo_total())
+print('')
+print(banco1)
+print(banco2)
+print(banco3)
+print('')
+conta1.sacar(1000)
+conta2.sacar(1000)
+conta3.sacar(1000)
+conta4.sacar(1000)
+conta5.sacar(1000)
+conta6.sacar(1000)
 print('')
 print(banco1)
 print(banco2)
