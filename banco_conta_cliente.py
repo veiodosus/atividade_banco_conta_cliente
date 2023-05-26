@@ -22,7 +22,8 @@ class Banco:
         for n in self.__contas:
             if numero == n.numero:
                 self.__contas.remove(n)
-                return 'Conta removida!'
+                print('Conta removida!')
+                return
         else:
             print('Numero não consta nos registros!')
         
@@ -148,6 +149,22 @@ conta3.sacar(1000)
 conta4.sacar(1000)
 conta5.sacar(1000)
 conta6.sacar(1000)
+print('')
+print(banco1)
+print(banco2)
+print(banco3)
+print('')
+banco1.remover(123)
+banco2.remover(456)
+banco3.remover(789)
+print('')
+banco1.remover(999)
+banco2.remover(666)
+banco3.remover(333)
+print('')
+banco1.adicionar(conta1)
+banco2.adicionar(conta3)
+banco3.adicionar(conta5)
 print('')
 print(banco1)
 print(banco2)
